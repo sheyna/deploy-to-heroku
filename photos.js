@@ -5,6 +5,7 @@ let cache = {};
 
 async function getPhotos(req, res, next) {
   try {
+    console.log(req.query)
     let searchQuery = req.query.searchQuery;
 
     // create a custom key for what the user has searched for
